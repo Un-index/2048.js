@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script>
+      if (window.location.protocol == "http:") {
+        console.log("yeaaaa");
+        window.location = "https://p2048.glitch.me/";
+      }
+    </script>
+
+    <title>Hello!</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      .grid-container {
+        size: fixed;
+        width: 50%;
+        display: grid;
+        align-content: center;
+        grid-template-columns: repeat(4, 23.55%);
+        grid-template-rows: repeat(35%, 4);
+        grid-gap: 12px;
+        background-color: #0776b5;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        text-align: center;
+        padding: 28px 10px;
+        font-size: 290%;
+      }
+      .takeNoSpace {
+        position: fixed;
+        line-width: 0;
+      }
+      .taken{
+        background-color:#85d3ff;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+      }
+      .free{
+        background-color:#18a0ed;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+      }
+    .btn:focus {
+       outline: none !important;
+       box-shadow: none;
+    }
+    </style>
+  </head>
+
+  <body>
+    <h1 class = "takeNoSpace" style = "right:300px">2048.js</h1>
+    <button id = "reset" type="button" class="btn btn-primary shadow-none" style = "position:fixed;width:200px;height:60px;right:250px;top:100px;font-size:170%">new game</button>
+    <br /><br />
+    <div class="grid-container">
+      <div class = "free" id="1">&nbsp</div>
+      <div class = "free"  id="2">&nbsp</div>
+      <div  class = "free" id="3">&nbsp</div>
+     <div  class = "free"  id="4">&nbsp</div>
+      <div  class = "free"  id="5">&nbsp</div>
+      <div  class = "free" id="6">&nbsp</div>
+      <div  class = "free" id="7">&nbsp</div>
+      <div  class = "free" id="8">&nbsp</div>
+      <div  class = "free" id="9">&nbsp</div>
+      <div  class = "free" id="10">&nbsp</div>
+      <div  class = "free" id="11">&nbsp</div>
+      <div  class = "free" id="12">&nbsp</div>
+      <div  class = "free" id="13">&nbsp</div>
+      <div class = "free"  id="14">&nbsp</div>
+      <div class = "free"  id="15">&nbsp</div>
+      <div class = "free"  id="16">&nbsp</div>
+      
+      
+    </div>
+
+    <script src="/script.js" defer></script>
+    
+  </body>
+</html>
